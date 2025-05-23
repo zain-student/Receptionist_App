@@ -104,6 +104,52 @@ export const PatientStoreModel = types
       // store.patientQueue.remove(patient);
       // store.patientQueue.push(patient);
     },
+    updateBasicInfoForPatient(
+      firstName: string,
+      lastName: string,
+      mrnNo: string,
+      dob: string,
+      cnic: string,
+      cellPhoneNumber: string,
+      index: number,
+      patientId: string,
+    ) {
+      const index1 = store.patients.findIndex(
+        (p: any) => p.PatientId === patientId,
+      );
+      if (index1 !== -1) {
+        const patient = store.patients[index1];
+        patient.FirstName = firstName;
+        patient.LastName = lastName;
+        patient.MRNNo = mrnNo;
+        patient.DOB = dob;
+        patient.CNIC = cnic;
+        patient.CellPhoneNumber = cellPhoneNumber;
+      } else {
+        console.warn(`Patient with ID ${patientId} not found.`);
+      }
+    },
+    updateAddressForPatient(
+      address: string,
+      country: string,
+      province: string,
+      city: string,
+      patientId: string,
+    ) {
+      const index = store.patients.findIndex(
+        (p: any) => p.PatientId === patientId,
+      );
+      if (index !== -1) {
+        const patient = store.patients[index];
+        patient.Address = address;
+        patient.Country = country;
+        patient.Province = province;
+        patient.City = city;
+      } else {
+        console.warn(`Patient with ID ${patientId} not found.`);
+      }
+    },
+
     modifyPatientAndAddPatientInQueue(
       patient: Patient,
       refreshData?: React.Dispatch<React.SetStateAction<string>>,

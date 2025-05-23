@@ -421,7 +421,7 @@ export const PatientServicesScreen: FC<
             keyExtractor={item => item.serviceId}
           /> */}
       <View style={[$buttonsView, {flex: 0.5}]}>
-        <FlatList
+        <FlatList //,,,,
           data={selectedService}
           // numColumns={2}
           style={$serviceListView}

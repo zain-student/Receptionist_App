@@ -88,6 +88,11 @@ export const ServiceStoreModel = types
         store.selectService(service);
       }
     },
+  }))
+  .views(store => ({
+    getServiceById(id: number) {
+      return store.services.find(service => service.ServiceId === id);
+    },
   }));
 
 export interface ServiceStore extends Instance<typeof ServiceStoreModel> {}

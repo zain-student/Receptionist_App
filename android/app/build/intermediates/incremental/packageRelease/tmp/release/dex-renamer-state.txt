@@ -1,7 +1,7 @@
-#Fri Jan 31 01:12:13 PKT 2025
-base.1=/Users/muhammadahmad/ahmad/ReactNative/Onedrive/Receptionist/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
+#Fri May 23 00:32:09 PDT 2025
+base.1=C\:\\Users\\hp\\Desktop\\OFFLINE APPS\\receptionist_app\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
 path.1=classes2.dex
-base.0=/Users/muhammadahmad/ahmad/ReactNative/Onedrive/Receptionist/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+base.0=C\:\\Users\\hp\\Desktop\\OFFLINE APPS\\receptionist_app\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex

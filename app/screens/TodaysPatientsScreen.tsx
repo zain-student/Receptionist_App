@@ -1,3 +1,4 @@
+
 import React, {FC, useCallback, useContext, useEffect, useState} from 'react';
 import {
   TouchableOpacity,
@@ -20,118 +21,156 @@ import {HeaderBackButton} from './HomeScreen/HeaderBackButton';
 import {useFocusEffect} from '@react-navigation/native';
 import {UserContext} from 'app/utils/UserContext';
 import {api} from 'app/services/api';
-
-const chainReactLogo = require('../../assets/images/cr-logo.png');
-const reactNativeLiveLogo = require('../../assets/images/rnl-logo.png');
-const reactNativeRadioLogo = require('../../assets/images/rnr-logo.png');
-const reactNativeNewsletterLogo = require('../../assets/images/rnn-logo.png');
-
-const PATIENTS = [
-  {
-    patientId: 1,
-    firstName: 'M. ',
-    lastName: 'Ali',
-    mrn: '123456789',
-    gender: 'Male',
-    age: '35Y|3M',
-  },
-  {
-    patientId: 2,
-    firstName: 'M. ',
-    lastName: 'Ali',
-    mrn: '123456789',
-    gender: 'Male',
-    age: '35Y|3M',
-  },
-  {
-    patientId: 3,
-    firstName: 'M. ',
-    lastName: 'Ali',
-    mrn: '123456789',
-    gender: 'Male',
-    age: '35Y|3M',
-  },
-  {
-    patientId: 4,
-    firstName: 'M. ',
-    lastName: 'Ali',
-    mrn: '123456789',
-    gender: 'Male',
-    age: '35Y|3M',
-  },
-  {
-    patientId: 5,
-    firstName: 'M. ',
-    lastName: 'Ali',
-    mrn: '123456789',
-    gender: 'Male',
-    age: '35Y|3M',
-  },
-  {
-    patientId: 6,
-    firstName: 'M. ',
-    lastName: 'Ali',
-    mrn: '123456789',
-    gender: 'Male',
-    age: '35Y|3M',
-  },
-  {
-    patientId: 7,
-    firstName: 'M. ',
-    lastName: 'Ali',
-    mrn: '123456789',
-    gender: 'Male',
-    age: '35Y|3M',
-  },
-  {
-    patientId: 8,
-    firstName: 'M. ',
-    lastName: 'Ali',
-    mrn: '123456789',
-    gender: 'Male',
-    age: '35Y|3M',
-  },
-  {
-    patientId: 9,
-    firstName: 'M. ',
-    lastName: 'Ali',
-    mrn: '123456789',
-    gender: 'Male',
-    age: '35Y|3M',
-  },
-  {
-    patientId: 10,
-    firstName: 'M. ',
-    lastName: 'Ali',
-    mrn: '123456789',
-    gender: 'Male',
-    age: '35Y|3M',
-  },
-];
-
+import {useRoute} from '@react-navigation/native';
+import {NewPatientStore} from 'app/models/NewPatientStore';
+import {PatientStore} from 'app/models/PatientStore';
+import {observer} from 'mobx-react-lite';
+import {parse} from 'date-fns';
 let restrictBackPress = false;
 export const TodaysPatientsScreen: FC<HomeTabScreenProps<'TodaysPatients'>> =
-  function TodaysPatientsScreen(_props) {
+  observer(function TodaysPatientsScreen(_props) {
     const [patient, setPatient] = useState('');
     const {navigation} = _props;
-    const {patientStore} = useStores();
+    const {patientStore, newPatientStore} = useStores();
     const {patientQueue, patientQueueForList} = patientStore;
 
     const [query, setQuery] = useState('');
     const [refresh, setRefresh] = useState('1');
     const userContext = useContext(UserContext);
-
+    const route = useRoute();
+    const patientData = route.params?.patientData;
+    const patientIndex = route.params?.patientIndex;
+    // useFocusEffect(
+    //   useCallback(() => {
+    //     setRefresh(Math.random().toString());
+    //   }, [userContext.refreshData]),
+    // );
     useFocusEffect(
       useCallback(() => {
-        setRefresh(Math.random().toString());
-      }, [userContext.refreshData]),
-    );
+        // if (
+        //   route.params?.patientData &&
+        //   route.params?.patientIndex !== undefined
+        // ) {
+        //   // Update the patient in the MobX store
+        //   patientStore.updateNewPatient(
+        //     route.params.patientIndex,
+        //     route.params.patientData,
+        //   );
 
+        // Optional: clear the params to avoid reapplying them
+        //   navigation.setParams({
+        //     patientData: undefined,
+        //     patientIndex: undefined,
+        //   });
+        // }
+
+        setRefresh(Math.random().toString());
+      }, [
+        route.params?.patientData,
+        route.params?.patientIndex,
+        userContext.refreshData,
+      ]),
+    );
+    // useEffect(() => {
+    // if (patientData && patientIndex !== undefined) {
+    // // Update the patient in the MobX store
+    // patientStore.updateNewPatient;
+    // // Optional: clear the params to avoid reapplying them
+    // navigation.setParams({
+    //   patientData: undefined,
+    //   patientIndex: undefined,
+    // });
+    // console.log('Patient Data:', patientData);
+
+    //     console.log(
+    //       'Updated Patient Data in Today patient screen:',
+    //       patientData,
+    //     );
+    //     console.log('Patient Index:', patientIndex);
+    //   }
+    // });
     useFocusEffect(
       useCallback(() => {
         restrictBackPress = false;
-      }, []),
+        if (
+          route.params?.patientData &&
+          route.params?.patientIndex !== undefined
+        ) {
+          newPatientStore.updateNewPatient(
+            route.params.patientIndex,
+            route.params.patientData,
+          );
+          patientStore.updatePatient(route.params.patientData); //.................
+          navigation.setParams({
+            patientData: undefined,
+            patientIndex: undefined,
+          });
+        }
+
+        setRefresh(Math.random().toString());
+      }, [
+        route.params?.patientData,
+        route.params?.patientIndex,
+        userContext.refreshData,
+      ]),
     );
+
+    // useFocusEffect(
+    //   useCallback(() => {
+    //     restrictBackPress = false;
+    //   }, []),
+    // );
+    // const formatDate = dob => {
+    //   if (!dob) return 'N/A';
+
+    //   const date = new Date(dob);
+    //   if (isNaN(date)) return 'Invalid Date';
+
+    //   const day = String(date.getDate()).padStart(2, '0');
+    //   const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+    //   const year = date.getFullYear();
+
+    //   return `${day}-${month}-${year}`;
+    // };
+    // Utility: Safely parse various DOB formats
+const parseDOB = (dob) => {
+  if (!dob) return null;
+
+  if (dob instanceof Date && !isNaN(dob)) {
+    return dob; // Already a valid Date object
+  }
+
+  // Try parsing known formats
+  const tryFormats = [
+    "dd/MM/yyyy hh:mm:ss a", // App saved format
+    "d/M/yyyy hh:mm:ss a",   // Loose format (e.g., 8/1/2015)
+    "MM/dd/yyyy",            // US-style fallback
+    "yyyy-MM-dd'T'HH:mm:ss.SSSxxx", // ISO format
+  ];
+
+  for (let formatStr of tryFormats) {
+    try {
+      const parsed = parse(dob, formatStr, new Date());
+      if (!isNaN(parsed)) return parsed;
+    } catch (e) {}
+  }
+
+  const fallback = new Date(dob);
+  return isNaN(fallback) ? null : fallback;
+};
+
+// Utility: Display date in UI
+const formatDate = (dob) => {
+  console.log("DOB:::", dob)
+  const date = parseDOB(dob);
+  if (!date) return "N/A";
+
+  const day = String(date.getDate()).padStart(2, "0");
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const year = date.getFullYear();
+  return `${day}-${month}-${year}`;
+};
+
 
     const PatientItem = ({title, total, index}) => (
       <View style={$patientItemView}>
@@ -148,12 +187,26 @@ export const TodaysPatientsScreen: FC<HomeTabScreenProps<'TodaysPatients'>> =
             {title.FirstName + ' ' + title.LastName}
           </Text>
           <Text testID="login-heading" preset="default" style={$patientsText}>
-            {
-              // item.MRNNo + ' | ' +
-              title.Gender + ' | ' + calculateFullAge(title.DOB)
-            }
+            {title.Gender + ' | ' + calculateFullAge(title.DOB)}
           </Text>
         </View>
+        <View style={$patientItemDetailView}>
+          <Text testID="login-heading" preset="bold" style={$patientsText}>
+            {'Address: '}
+          </Text>
+          <Text testID="login-heading" preset="default" style={$patientsText}>
+            {title.Address}
+          </Text>
+        </View>
+        <View style={$patientItemDetailView}>
+          <Text testID="login-heading" preset="bold" style={$patientsText}>
+            {'DOB: '}
+          </Text>
+          <Text testID="login-heading" preset="default" style={$patientsText}>
+            {formatDate(title.DOB)}
+          </Text>
+        </View>
+
         {title.Services.length > 0 ? (
           <View style={[$patientItemDetailView, {flexDirection: 'column'}]}>
             {title.Services.map(item => {
@@ -187,8 +240,8 @@ export const TodaysPatientsScreen: FC<HomeTabScreenProps<'TodaysPatients'>> =
     );
 
     function patientItemPress(title: React.SetStateAction<string>) {
-      console.log('-=-=-=-=-=-=-=-=-', title);
-      console.log('-=-=-=-=-=-=-=-=-', patient);
+      console.log('-=-=-=-=-=-=-=-=-OOO', title);
+      console.log('-=-=-=-=-=-=-=-=-AAA', patient);
       setPatient(title);
     }
 
@@ -203,6 +256,7 @@ export const TodaysPatientsScreen: FC<HomeTabScreenProps<'TodaysPatients'>> =
     const profilePress = () => {
       // console.log('Profile pressed.......')
     };
+    const {selectedPatient} = patientStore;
 
     return (
       <>
@@ -218,31 +272,36 @@ export const TodaysPatientsScreen: FC<HomeTabScreenProps<'TodaysPatients'>> =
           }
           RightActionComponent={<ProfileIconButton onPress={profilePress} />}
         />
-        <Screen
-          preset="fixed"
-          contentContainerStyle={$container}
-          // safeAreaEdges={["top"]}
-        >
-          {/* <Text preset="heading" tx="todaysPatientsScreen.todaysPatients" style={$title} /> */}
+        <Screen preset="fixed" contentContainerStyle={$container}>
           <View style={$patientsListView}>
             <FlatList
               key={refresh}
               data={patientQueueForList()}
-              // style={$patientsListView}
               extraData={patientQueueForList()}
-              renderItem={({item, index}) => (
-                <PatientItem title={item} total={0} index={index} />
-              )}
               keyExtractor={(item, index) => index.toString()}
+              renderItem={({item, index}) => (
+                <TouchableOpacity
+                  onPress={() => {
+                    console.log('Patient Index:', index);
+                    navigation.navigate('Profile', {
+                      screen: 'EditProfileBasicInfoScreen',
+                      params: {
+                        patientData: item,
+                        patientIndex: index,
+                      },
+                    });
+                  }}>
+                  <PatientItem title={item} total={0} index={index} />
+                </TouchableOpacity>
+              )}
             />
           </View>
         </Screen>
       </>
     );
-  };
+  });
 
 const $container: ViewStyle = {
-  // paddingTop: spacing.lg + spacing.xl,
   paddingHorizontal: spacing.lg,
   flex: 1,
 };
@@ -254,31 +313,23 @@ const $title: TextStyle = {
 
 const $patientsListView: ViewStyle = {
   flex: 1,
-  // borderWidth: 1,
   width: '100%',
   alignSelf: 'center',
   marginVertical: spacing.sm,
 };
 
-const $patientsText: TextStyle = {
-  // padding: spacing.sm,
-};
+const $patientsText: TextStyle = {};
 
 const $buttonsView: ViewStyle = {
   flex: 1,
   flexDirection: 'row',
-  // alignSelf: 'baseline',
-  // position: 'absolute',
-  // bottom: 20,
   width: '100%',
 };
 
 const $patientItemDetailView: ViewStyle = {
   flex: 1,
   backgroundColor: colors.background,
-  // borderBottomRightRadius: 6,
   borderWidth: 0.25,
-  // borderBottomLeftRadius: 6,
   flexDirection: 'row',
   justifyContent: 'space-between',
   padding: spacing.sm,
@@ -311,7 +362,6 @@ const $patientItemTitleView: ViewStyle = {
 const $patientTitleText: TextStyle = {
   fontSize: 14,
   color: colors.themeText,
-  // paddingHorizontal: spacing.sm
 };
 
 const $serviceItem: ViewStyle = {
@@ -328,4 +378,3 @@ const $patientSearch: ViewStyle = {
   borderWidth: 0.5,
   borderRadius: 5,
 };
-// @home remove-file

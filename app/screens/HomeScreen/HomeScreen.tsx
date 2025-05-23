@@ -238,6 +238,7 @@ export const HomeScreen: FC<HomeTabScreenProps<'Home'>> = function HomeScreen(
   const [isLoading, setIsLoading] = React.useState(true);
   const {siteStore} = useStores();
   const [showQrCodeScanner, setshowQrCodeScanner] = React.useState(false);
+  const [totalPatients, setTotalPatients] = useState<number>(0); // State to hold the ttal number of patients in OPD
 
   const {
     authenticationStore: {logout, appIsOnline},
@@ -539,6 +540,25 @@ export const HomeScreen: FC<HomeTabScreenProps<'Home'>> = function HomeScreen(
   useEffect(() => {
     return () => timeout.current && clearTimeout(timeout.current);
   }, []);
+  // This will fetch the total number of the OPD patients and will set it to the state
+  useFocusEffect(
+    useCallback(() => {
+      if (appIsOnline() === '1') {
+        (async function load() {
+          await pickerStore.fetchPickers();
+          await serviceStore.fetchServices();
+
+          // Fetch patients if needed
+          // await patientStore.fetchPatients(siteStore.getSelectedSite());
+
+          // Set total OPD patients
+          setTotalPatients(patientStore.patientQueueForList().length);
+
+          setIsLoading(false);
+        })();
+      }
+    }, []),
+  );
 
   const $drawerInsets = useSafeAreaInsetsStyle(['top']);
 
@@ -669,6 +689,12 @@ export const HomeScreen: FC<HomeTabScreenProps<'Home'>> = function HomeScreen(
           )}
           style={{marginTop: spacing.md}}
         />
+        {/* This will display the total number of todays patients in the OPD */}
+        <View style={{alignItems: 'center', marginVertical: spacing.xxl}}>
+          <Text preset="bold" size="xl">
+            Total OPD Patients: {totalPatients}
+          </Text>
+        </View>
         {/* <SectionList
             ref={listRef}
             contentContainerStyle={$sectionListContentContainer}

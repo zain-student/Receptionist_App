@@ -380,7 +380,9 @@ export const ProfileBasicInfoScreen: FC<
       FirstName: fName,
       LastName: lName,
       MRNNo: '01-01-000' + latestIndex(),
-      DOB: dob.toDateString(),
+      // DOB: dob.toDateString(),
+      DOB: dob.toISOString(),
+
       CNIC: '',
       CellPhoneNumber: '',
       Gender: gender + '',
