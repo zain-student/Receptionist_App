@@ -87,7 +87,7 @@ export const CashCollectionScreen: FC<
       addServicesToSelectedPatient(selectedService);
       addCheckedInSynced(false);
       addSelectedPatientStatus('CheckIn');
-      console.log('=-=-=-=-=', getSelectedPatient()[0]);
+      console.log('=-=-=-=-=HH', getSelectedPatient()[0]);
 
       addPatientInQueue(getSelectedPatient()[0]);
 

@@ -27,6 +27,7 @@ interface Enclosure {
   Services: any;
   Status: string;
   CheckInSynced: boolean;
+  isUserAdded?: boolean;
 }
 
 /**
@@ -52,6 +53,8 @@ export const PatientModel = types
     Province: types.string,
     Address: types.string,
     EnteredOn: types.string,
+    // isUserAdded: types.maybeNull(types.boolean),
+    isUserAdded: types.optional(types.boolean, false), // ← Add this line
     Services: types.array(types.reference(ServiceModel)),
 
     Status: types.maybeNull(types.string),

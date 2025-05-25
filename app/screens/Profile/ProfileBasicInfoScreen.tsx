@@ -354,6 +354,7 @@ export const ProfileBasicInfoScreen: FC<
       Services: [],
       Status: '',
       CheckInSynced: false,
+      isUserAdded: true,
     };
 
     const patient2 = {
@@ -398,6 +399,7 @@ export const ProfileBasicInfoScreen: FC<
       Services: [],
       Status: '',
       CheckInSynced: false,
+      isUserAdded: true,
 
       Ethnicity: ethnicity + '',
       RelationToPatient: relationship + '',

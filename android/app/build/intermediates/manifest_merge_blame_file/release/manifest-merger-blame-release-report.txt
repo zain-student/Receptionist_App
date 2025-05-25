@@ -6,221 +6,221 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml
+8-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml
+9-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:3:5-67
-11-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:3:22-64
+11-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:3:5-67
+11-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:3:22-64
 12    <uses-permission
-12-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:4:8-6:74
+12-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:4:8-6:74
 13        android:name="android.permission.ACCESS_COARSE_LOCATION"
-13-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:6:16-72
+13-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:6:16-72
 14        android:required="true" />
-14-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:5:15-38
+14-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:5:15-38
 15    <uses-permission
-15-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:7:4-9:65
+15-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:7:4-9:65
 16        android:name="android.permission.ACCESS_WIFI_STATE"
-16-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:9:12-63
+16-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:9:12-63
 17        android:required="true" />
-17-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:8:12-35
+17-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:8:12-35
 18    <uses-permission
-18-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:10:4-12:65
+18-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:10:4-12:65
 19        android:name="android.permission.CHANGE_WIFI_STATE"
-19-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:12:12-63
+19-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:12:12-63
 20        android:required="true" />
-20-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:11:12-35
+20-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:11:12-35
 21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-21-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:13:4-80
-21-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:13:21-77
+21-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:13:4-80
+21-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:13:21-77
 22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-22-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:14:4-78
-22-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:14:21-76
+22-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:14:4-78
+22-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:14:21-76
 23    <!-- If your app targets Android 13 (API level 33) or higher, you must declare the NEARBY_WIFI_DEVICES permission. -->
 24    <uses-permission
-24-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:16:4-124
+24-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:16:4-124
 25        android:name="android.permission.NEARBY_WIFI_DEVICES"
-25-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:16:21-74
+25-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:16:21-74
 26        android:usesPermissionFlags="neverForLocation" />
-26-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:16:75-121
+26-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:16:75-121
 27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-27-->[:react-native-community_netinfo] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-79
-27-->[:react-native-community_netinfo] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:22-76
+27-->[:react-native-community_netinfo] F:\receptionist_app\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-79
+27-->[:react-native-community_netinfo] F:\receptionist_app\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:22-76
 28
 29    <queries>
-29-->[:expo-file-system] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-18:15
+29-->[:expo-file-system] F:\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-18:15
 30
 31        <!-- Query open documents -->
 32        <intent>
-32-->[:expo-file-system] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-17:18
+32-->[:expo-file-system] F:\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-17:18
 33            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
-33-->[:expo-file-system] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-79
-33-->[:expo-file-system] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:21-76
+33-->[:expo-file-system] F:\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-79
+33-->[:expo-file-system] F:\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:21-76
 34        </intent>
 35    </queries>
 36
 37    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-37-->[com.android.installreferrer:installreferrer:1.0] C:\Users\hp\.gradle\caches\transforms-3\5b8f7c5f000adfbea9280d2a170e22ed\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
-37-->[com.android.installreferrer:installreferrer:1.0] C:\Users\hp\.gradle\caches\transforms-3\5b8f7c5f000adfbea9280d2a170e22ed\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
+37-->[com.android.installreferrer:installreferrer:1.0] C:\Users\zainm\.gradle\caches\transforms-3\5677f720421bf6948dac9e1927cb2e47\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
+37-->[com.android.installreferrer:installreferrer:1.0] C:\Users\zainm\.gradle\caches\transforms-3\5677f720421bf6948dac9e1927cb2e47\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
 38
 39    <application
-39-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:18:5-39:19
+39-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:18:5-39:19
 40        android:name="com.receptionist.MainApplication"
-40-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:19:7-38
+40-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:19:7-38
 41        android:allowBackup="false"
-41-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:23:7-34
+41-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:23:7-34
 42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-42-->[androidx.core:core:1.8.0] C:\Users\hp\.gradle\caches\transforms-3\9623e378e4dfc57c47793d0ffd25ee05\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+42-->[androidx.core:core:1.8.0] C:\Users\zainm\.gradle\caches\transforms-3\9623e378e4dfc57c47793d0ffd25ee05\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 43        android:icon="@mipmap/ic_launcher"
-43-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:21:7-41
+43-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:21:7-41
 44        android:label="@string/app_name"
-44-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:20:7-39
+44-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:20:7-39
 45        android:roundIcon="@mipmap/ic_launcher_round"
-45-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:22:7-52
+45-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:22:7-52
 46        android:theme="@style/AppTheme"
-46-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:25:7-38
+46-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:25:7-38
 47        android:usesCleartextTraffic="true" >
-47-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:24:7-42
+47-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:24:7-42
 48        <activity
-48-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:26:7-38:18
+48-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:26:7-38:18
 49            android:name="com.receptionist.MainActivity"
-49-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:27:9-37
+49-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:27:9-37
 50            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-50-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:29:9-118
+50-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:29:9-118
 51            android:exported="true"
-51-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:32:9-32
+51-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:32:9-32
 52            android:label="@string/app_name"
-52-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:28:9-41
+52-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:28:9-41
 53            android:launchMode="singleTask"
-53-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:30:9-40
+53-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:30:9-40
 54            android:theme="@style/BootTheme"
-54-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:33:9-41
+54-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:33:9-41
 55            android:windowSoftInputMode="adjustPan" >
-55-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:31:9-48
+55-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:31:9-48
 56            <intent-filter>
-56-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:34:9-37:25
+56-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:34:9-37:25
 57                <action android:name="android.intent.action.MAIN" />
-57-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:35:13-65
-57-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:35:21-62
+57-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:35:13-65
+57-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:35:21-62
 58
 59                <category android:name="android.intent.category.LAUNCHER" />
-59-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:36:13-73
-59-->C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android\app\src\main\AndroidManifest.xml:36:23-70
+59-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:36:13-73
+59-->F:\receptionist_app\android\app\src\main\AndroidManifest.xml:36:23-70
 60            </intent-filter>
 61        </activity>
 62
 63        <provider
-63-->[:react-native-webview] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-16:20
+63-->[:react-native-webview] F:\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-16:20
 64            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-64-->[:react-native-webview] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-83
+64-->[:react-native-webview] F:\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-83
 65            android:authorities="com.receptionist.fileprovider"
-65-->[:react-native-webview] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-64
+65-->[:react-native-webview] F:\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-64
 66            android:exported="false"
-66-->[:react-native-webview] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-37
+66-->[:react-native-webview] F:\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-37
 67            android:grantUriPermissions="true" >
-67-->[:react-native-webview] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-47
+67-->[:react-native-webview] F:\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-47
 68            <meta-data
-68-->[:react-native-webview] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-15:63
+68-->[:react-native-webview] F:\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-15:63
 69                android:name="android.support.FILE_PROVIDER_PATHS"
-69-->[:react-native-webview] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:17-67
+69-->[:react-native-webview] F:\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:17-67
 70                android:resource="@xml/file_provider_paths" />
-70-->[:react-native-webview] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:17-60
+70-->[:react-native-webview] F:\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:17-60
 71        </provider>
 72        <provider
-72-->[:expo-file-system] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-30:20
+72-->[:expo-file-system] F:\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-30:20
 73            android:name="expo.modules.filesystem.FileSystemFileProvider"
-73-->[:expo-file-system] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-74
+73-->[:expo-file-system] F:\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-74
 74            android:authorities="com.receptionist.FileSystemFileProvider"
-74-->[:expo-file-system] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-74
+74-->[:expo-file-system] F:\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-74
 75            android:exported="false"
-75-->[:expo-file-system] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-37
+75-->[:expo-file-system] F:\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-37
 76            android:grantUriPermissions="true" >
-76-->[:expo-file-system] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:13-47
+76-->[:expo-file-system] F:\receptionist_app\node_modules\expo-file-system\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:13-47
 77            <meta-data
-77-->[:react-native-webview] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-15:63
+77-->[:react-native-webview] F:\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-15:63
 78                android:name="android.support.FILE_PROVIDER_PATHS"
-78-->[:react-native-webview] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:17-67
+78-->[:react-native-webview] F:\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:17-67
 79                android:resource="@xml/file_system_provider_paths" />
-79-->[:react-native-webview] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:17-60
+79-->[:react-native-webview] F:\receptionist_app\node_modules\react-native-webview\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:17-60
 80        </provider>
 81
 82        <meta-data
-82-->[:expo-modules-core] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:9-11:89
+82-->[:expo-modules-core] F:\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:9-11:89
 83            android:name="org.unimodules.core.AppLoader#react-native-headless"
-83-->[:expo-modules-core] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-79
+83-->[:expo-modules-core] F:\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-79
 84            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
-84-->[:expo-modules-core] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-86
+84-->[:expo-modules-core] F:\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-86
 85        <meta-data
-85-->[:expo-modules-core] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-15:45
+85-->[:expo-modules-core] F:\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-15:45
 86            android:name="com.facebook.soloader.enabled"
-86-->[:expo-modules-core] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-57
+86-->[:expo-modules-core] F:\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-57
 87            android:value="true" />
-87-->[:expo-modules-core] C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-33
+87-->[:expo-modules-core] F:\receptionist_app\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-33
 88
 89        <provider
-89-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+89-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zainm\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 90            android:name="androidx.startup.InitializationProvider"
-90-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+90-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zainm\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
 91            android:authorities="com.receptionist.androidx-startup"
-91-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+91-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zainm\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 92            android:exported="false" >
-92-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+92-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zainm\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
 93            <meta-data
-93-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+93-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zainm\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 94                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-94-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+94-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zainm\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
 95                android:value="androidx.startup" />
-95-->[androidx.emoji2:emoji2:1.0.0] C:\Users\hp\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+95-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zainm\.gradle\caches\transforms-3\223146ef33e3aa619e8b04649706e145\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 96            <meta-data
-96-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\hp\.gradle\caches\transforms-3\08e4a4208e3ca4010b209b1808905132\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+96-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\zainm\.gradle\caches\transforms-3\08e4a4208e3ca4010b209b1808905132\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
 97                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-97-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\hp\.gradle\caches\transforms-3\08e4a4208e3ca4010b209b1808905132\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+97-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\zainm\.gradle\caches\transforms-3\08e4a4208e3ca4010b209b1808905132\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
 98                android:value="androidx.startup" />
-98-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\hp\.gradle\caches\transforms-3\08e4a4208e3ca4010b209b1808905132\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+98-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\zainm\.gradle\caches\transforms-3\08e4a4208e3ca4010b209b1808905132\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
 99            <meta-data
-99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
 100                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
 101                android:value="androidx.startup" />
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
 102        </provider>
 103
 104        <receiver
-104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
 105            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
 106            android:directBootAware="false"
-106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
 107            android:enabled="true"
-107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
 108            android:exported="true"
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
 109            android:permission="android.permission.DUMP" >
-109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 110            <intent-filter>
-110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
 111                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 112            </intent-filter>
 113            <intent-filter>
-113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
 114                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 115            </intent-filter>
 116            <intent-filter>
-116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
 117                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 118            </intent-filter>
 119            <intent-filter>
-119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
 120                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hp\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zainm\.gradle\caches\transforms-3\2687b1f3b7881759e689af177e21a673\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
 121            </intent-filter>
 122        </receiver>
 123    </application>

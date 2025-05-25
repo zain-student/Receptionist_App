@@ -1,4 +1,3 @@
-
 import React, {FC, useCallback, useContext, useEffect, useState} from 'react';
 import {
   TouchableOpacity,
@@ -8,6 +7,7 @@ import {
   View,
   ViewStyle,
   FlatList,
+  ToastAndroid,
 } from 'react-native';
 import {TextInput, Button, ListItem, Screen, Text, Header} from '../components';
 import {HomeTabScreenProps} from '../navigators/HomeNavigator';
@@ -133,44 +133,43 @@ export const TodaysPatientsScreen: FC<HomeTabScreenProps<'TodaysPatients'>> =
     //   return `${day}-${month}-${year}`;
     // };
     // Utility: Safely parse various DOB formats
-const parseDOB = (dob) => {
-  if (!dob) return null;
+    const parseDOB = dob => {
+      if (!dob) return null;
 
-  if (dob instanceof Date && !isNaN(dob)) {
-    return dob; // Already a valid Date object
-  }
+      if (dob instanceof Date && !isNaN(dob)) {
+        return dob; // Already a valid Date object
+      }
 
-  // Try parsing known formats
-  const tryFormats = [
-    "dd/MM/yyyy hh:mm:ss a", // App saved format
-    "d/M/yyyy hh:mm:ss a",   // Loose format (e.g., 8/1/2015)
-    "MM/dd/yyyy",            // US-style fallback
-    "yyyy-MM-dd'T'HH:mm:ss.SSSxxx", // ISO format
-  ];
+      // Try parsing known formats
+      const tryFormats = [
+        'dd/MM/yyyy hh:mm:ss a', // App saved format
+        'd/M/yyyy hh:mm:ss a', // Loose format (e.g., 8/1/2015)
+        'MM/dd/yyyy', // US-style fallback
+        "yyyy-MM-dd'T'HH:mm:ss.SSSxxx", // ISO format
+      ];
 
-  for (let formatStr of tryFormats) {
-    try {
-      const parsed = parse(dob, formatStr, new Date());
-      if (!isNaN(parsed)) return parsed;
-    } catch (e) {}
-  }
+      for (let formatStr of tryFormats) {
+        try {
+          const parsed = parse(dob, formatStr, new Date());
+          if (!isNaN(parsed)) return parsed;
+        } catch (e) {}
+      }
 
-  const fallback = new Date(dob);
-  return isNaN(fallback) ? null : fallback;
-};
+      const fallback = new Date(dob);
+      return isNaN(fallback) ? null : fallback;
+    };
 
-// Utility: Display date in UI
-const formatDate = (dob) => {
-  console.log("DOB:::", dob)
-  const date = parseDOB(dob);
-  if (!date) return "N/A";
+    // Utility: Display date in UI
+    const formatDate = dob => {
+      console.log('DOB:::', dob);
+      const date = parseDOB(dob);
+      if (!date) return 'N/A';
 
-  const day = String(date.getDate()).padStart(2, "0");
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const year = date.getFullYear();
-  return `${day}-${month}-${year}`;
-};
-
+      const day = String(date.getDate()).padStart(2, '0');
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const year = date.getFullYear();
+      return `${day}-${month}-${year}`;
+    };
 
     const PatientItem = ({title, total, index}) => (
       <View style={$patientItemView}>
@@ -273,7 +272,7 @@ const formatDate = (dob) => {
           RightActionComponent={<ProfileIconButton onPress={profilePress} />}
         />
         <Screen preset="fixed" contentContainerStyle={$container}>
-          <View style={$patientsListView}>
+          {/* <View style={$patientsListView}>
             <FlatList
               key={refresh}
               data={patientQueueForList()}
@@ -290,6 +289,68 @@ const formatDate = (dob) => {
                         patientIndex: index,
                       },
                     });
+                  }}>
+                  <PatientItem title={item} total={0} index={index} />
+                </TouchableOpacity>
+              )}
+            />
+          </View> */}
+
+          {/* <View style={$patientsListView}>
+            <FlatList
+              key={refresh}
+              data={patientQueueForList()}
+              extraData={patientQueueForList()}
+              keyExtractor={(item, index) => index.toString()}
+              renderItem={({item, index}) => (
+                <TouchableOpacity
+                  disabled={!item.isUserAdded} // Disable touch for non-user patients
+                  onPress={() => {
+                    if (item.isUserAdded) {
+                      console.log('Patient Index:', index);
+                      navigation.navigate('Profile', {
+                        screen: 'EditProfileBasicInfoScreen',
+                        params: {
+                          patientData: item,
+                          patientIndex: index,
+                        },
+                      });
+                    } else {
+                      Alert.alert(
+                        'Access Denied',
+                        'You can only edit patients you have added.',
+                      );
+                    }
+                  }}>
+                  <PatientItem title={item} total={0} index={index} />
+                </TouchableOpacity>
+              )}
+            />
+          </View> */}
+          <View style={$patientsListView}>
+            <FlatList
+              key={refresh}
+              data={patientQueueForList()}
+              extraData={patientQueueForList()}
+              keyExtractor={(item, index) => index.toString()}
+              renderItem={({item, index}) => (
+                <TouchableOpacity
+                  onPress={() => {
+                    if (item.isUserAdded) {
+                      console.log('Patient Index:', index);
+                      navigation.navigate('Profile', {
+                        screen: 'EditProfileBasicInfoScreen',
+                        params: {
+                          patientData: item,
+                          patientIndex: index,
+                        },
+                      });
+                    } else {
+                      ToastAndroid.show(
+                        ' Only user-added patients can be edited.',
+                        ToastAndroid.SHORT,
+                      );
+                    }
                   }}>
                   <PatientItem title={item} total={0} index={index} />
                 </TouchableOpacity>

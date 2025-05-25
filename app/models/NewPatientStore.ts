@@ -58,10 +58,12 @@ export const NewPatientStoreModel = types
       emergencyRelationName: string,
       emergencyContact: string,
       index: number,
+      isUserAdded: boolean, // <-- Add a flag to indicate if the user added this contact
     ) {
       store.newPatients[index].EmergencyRelation = emergencyRelation;
       store.newPatients[index].EmergencyRelationName = emergencyRelationName;
       store.newPatients[index].EmergencyRelationContact = emergencyContact;
+      store.newPatients[index].isUserAdded = isUserAdded; // <-- Set the flag
     },
     removeNewPatientFromQueue(newPatient: NewPatient) {
       store.newPatients.remove(newPatient);
@@ -206,10 +208,10 @@ export const NewPatientStoreModel = types
         console.warn(`Invalid PatientIndex: ${patientIndex}`);
         return;
       }
-    
+
       const patient = patients[patientIndex];
-      const { PatientId: _, ...safeFields } = updatedFields;
-    
+      const {PatientId: _, ...safeFields} = updatedFields;
+
       // Handle Services field properly
       if (safeFields.Services !== undefined) {
         // If Services is an array of plain objects or IDs, convert to MST references or instances here
@@ -219,7 +221,7 @@ export const NewPatientStoreModel = types
           // Assuming you have a serviceStore that holds all Service instances
           // Convert IDs or raw objects to MST Service model references
           patient.Services = safeFields.Services.map(serviceItem => {
-            if (typeof serviceItem === "number") {
+            if (typeof serviceItem === 'number') {
               // If serviceItem is an ID, get the service model from store
               return store.serviceStore.getServiceById(serviceItem);
             } else if (serviceItem?.id) {
@@ -230,17 +232,16 @@ export const NewPatientStoreModel = types
           }).filter(Boolean); // remove nulls if any
         } else {
           // Unexpected format, ignore or log warning
-          console.warn("Unexpected Services format in updatedFields");
+          console.warn('Unexpected Services format in updatedFields');
         }
-    
+
         // Remove Services from safeFields so Object.assign doesn't overwrite incorrectly
         delete safeFields.Services;
       }
-    
+
       // Assign other fields safely (with necessary type conversions if needed)
       Object.assign(patient, safeFields);
-    }
-    
+    },
   }))
   .views(store => ({
     get newPatientsForList() {

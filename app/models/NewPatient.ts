@@ -37,6 +37,7 @@ interface Enclosure {
   TelephoneNo: string;
   //MobileNo1 to be saved in CellPhoneNumber
   MobileNo2: string;
+  isUserAdded?: boolean;
 }
 
 /**
@@ -65,7 +66,7 @@ export const NewPatientModel = types
     Services: types.maybeNull(types.array(types.reference(ServiceModel))),
     Status: types.maybeNull(types.string),
     CheckInSynced: types.maybeNull(types.boolean),
-
+    isUserAdded: types.maybeNull(types.boolean),
     Ethnicity: types.string,
     RelationToPatient: types.string,
     NameOfRelative: types.string,

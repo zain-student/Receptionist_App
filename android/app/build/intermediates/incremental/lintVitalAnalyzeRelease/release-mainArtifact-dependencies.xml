@@ -1,8 +1,8 @@
 <dependencies>
   <compile
-      roots="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-pager-view::release,com.facebook.react:react-android:0.72.12:release@aar,com.facebook.react:hermes-android:0.72.12:release@aar,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-async-storage_async-storage::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-community_datetimepicker::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-community_netinfo::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-bootsplash::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-gesture-handler::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-keep-awake::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-mmkv::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-reanimated::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-safe-area-context::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-screens::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-sha256::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-svg::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-tcp::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-webview::release,androidx.appcompat:appcompat:1.4.1@aar,androidx.appcompat:appcompat-resources:1.4.1@aar,androidx.vectordrawable:vectordrawable-animated:1.1.0@aar,androidx.vectordrawable:vectordrawable:1.1.0@aar,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-file-system::release,androidx.legacy:legacy-support-v4:1.0.0@aar,androidx.fragment:fragment:1.5.7@aar,androidx.fragment:fragment:1.5.7@aar,androidx.legacy:legacy-support-core-ui:1.0.0@aar,androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar,androidx.activity:activity:1.7.1@aar,androidx.drawerlayout:drawerlayout:1.0.0@aar,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core::release,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.6.1@aar,androidx.lifecycle:lifecycle-common:2.6.1@jar,androidx.lifecycle:lifecycle-livedata-core:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-runtime:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1@aar,androidx.core:core-ktx:1.6.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar,androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.media:media:1.0.0@aar,androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar,androidx.core:core:1.8.0@aar,androidx.core:core:1.8.0@aar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-constants::release,androidx.cursoradapter:cursoradapter:1.0.0@aar,androidx.savedstate:savedstate:1.2.1@aar,androidx.interpolator:interpolator:1.0.0@aar,androidx.arch.core:core-runtime:2.2.0@aar,androidx.arch.core:core-common:2.2.0@jar,androidx.documentfile:documentfile:1.0.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar,androidx.print:print:1.0.0@aar,androidx.annotation:annotation:1.3.0@jar,androidx.annotation:annotation-experimental:1.1.0@aar,com.facebook.fresco:imagepipeline-okhttp3:2.5.0@aar,com.squareup.okhttp3:okhttp-urlconnection:4.9.2@jar,com.squareup.okhttp3:okhttp:4.9.2@jar,com.squareup.okio:okio:2.9.0@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10@jar,org.jetbrains.kotlin:kotlin-stdlib:1.8.10@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10@jar,org.jetbrains:annotations:13.0@jar,androidx.tracing:tracing:1.1.0@aar,androidx.autofill:autofill:1.1.0@aar,com.facebook.fbjni:fbjni:0.3.0@aar,com.facebook.soloader:soloader:0.10.5@aar,com.facebook.soloader:nativeloader:0.10.5@jar,com.facebook.fresco:fresco:2.5.0@aar,com.facebook.fresco:fbcore:2.5.0@aar,com.facebook.soloader:annotation:0.10.5@jar,com.facebook.fresco:ui-common:2.5.0@aar,com.facebook.fresco:drawee:2.5.0@aar,com.facebook.fresco:imagepipeline:2.5.0@aar,com.facebook.fresco:imagepipeline-base:2.5.0@aar,com.facebook.infer.annotation:infer-annotation:0.18.0@jar,com.google.code.findbugs:jsr305:3.0.2@jar,org.jetbrains.kotlin:kotlin-annotations-jvm:1.3.72@jar,com.facebook.fresco:imagepipeline-native:2.5.0@aar,com.facebook.fresco:memory-type-ashmem:2.5.0@aar,com.facebook.fresco:memory-type-native:2.5.0@aar,com.facebook.fresco:memory-type-java:2.5.0@aar,com.facebook.fresco:nativeimagefilters:2.5.0@aar,com.facebook.fresco:nativeimagetranscoder:2.5.0@aar,com.facebook.yoga:proguard-annotations:1.19.0@jar,javax.inject:javax.inject:1@jar,commons-io:commons-io:2.6@jar,commons-codec:commons-codec:1.10@jar,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-application::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-font::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-keep-awake::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-localization::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core$android-annotation,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core$android-annotation-processor">
+      roots="F:\receptionist_app\android@@:react-native-pager-view::release,com.facebook.react:react-android:0.72.12:release@aar,com.facebook.react:hermes-android:0.72.12:release@aar,F:\receptionist_app\android@@:react-native-async-storage_async-storage::release,F:\receptionist_app\android@@:react-native-community_datetimepicker::release,F:\receptionist_app\android@@:react-native-community_netinfo::release,F:\receptionist_app\android@@:expo::release,F:\receptionist_app\android@@:react-native-bootsplash::release,F:\receptionist_app\android@@:react-native-gesture-handler::release,F:\receptionist_app\android@@:react-native-keep-awake::release,F:\receptionist_app\android@@:react-native-mmkv::release,F:\receptionist_app\android@@:react-native-reanimated::release,F:\receptionist_app\android@@:react-native-safe-area-context::release,F:\receptionist_app\android@@:react-native-screens::release,F:\receptionist_app\android@@:react-native-sha256::release,F:\receptionist_app\android@@:react-native-svg::release,F:\receptionist_app\android@@:react-native-tcp::release,F:\receptionist_app\android@@:react-native-webview::release,androidx.appcompat:appcompat:1.4.1@aar,androidx.appcompat:appcompat-resources:1.4.1@aar,androidx.vectordrawable:vectordrawable-animated:1.1.0@aar,androidx.vectordrawable:vectordrawable:1.1.0@aar,F:\receptionist_app\android@@:expo-file-system::release,androidx.legacy:legacy-support-v4:1.0.0@aar,androidx.fragment:fragment:1.5.7@aar,androidx.fragment:fragment:1.5.7@aar,androidx.legacy:legacy-support-core-ui:1.0.0@aar,androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar,androidx.activity:activity:1.7.1@aar,androidx.drawerlayout:drawerlayout:1.0.0@aar,F:\receptionist_app\android@@:expo-modules-core::release,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.6.1@aar,androidx.lifecycle:lifecycle-common:2.6.1@jar,androidx.lifecycle:lifecycle-livedata-core:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-runtime:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1@aar,androidx.core:core-ktx:1.6.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar,androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.media:media:1.0.0@aar,androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar,androidx.core:core:1.8.0@aar,androidx.core:core:1.8.0@aar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,F:\receptionist_app\android@@:expo-constants::release,androidx.cursoradapter:cursoradapter:1.0.0@aar,androidx.savedstate:savedstate:1.2.1@aar,androidx.interpolator:interpolator:1.0.0@aar,androidx.arch.core:core-runtime:2.2.0@aar,androidx.arch.core:core-common:2.2.0@jar,androidx.documentfile:documentfile:1.0.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar,androidx.print:print:1.0.0@aar,androidx.annotation:annotation:1.3.0@jar,androidx.annotation:annotation-experimental:1.1.0@aar,com.facebook.fresco:imagepipeline-okhttp3:2.5.0@aar,com.squareup.okhttp3:okhttp-urlconnection:4.9.2@jar,com.squareup.okhttp3:okhttp:4.9.2@jar,com.squareup.okio:okio:2.9.0@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10@jar,org.jetbrains.kotlin:kotlin-stdlib:1.8.10@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10@jar,org.jetbrains:annotations:13.0@jar,androidx.tracing:tracing:1.1.0@aar,androidx.autofill:autofill:1.1.0@aar,com.facebook.fbjni:fbjni:0.3.0@aar,com.facebook.soloader:soloader:0.10.5@aar,com.facebook.soloader:nativeloader:0.10.5@jar,com.facebook.fresco:fresco:2.5.0@aar,com.facebook.fresco:fbcore:2.5.0@aar,com.facebook.soloader:annotation:0.10.5@jar,com.facebook.fresco:ui-common:2.5.0@aar,com.facebook.fresco:drawee:2.5.0@aar,com.facebook.fresco:imagepipeline:2.5.0@aar,com.facebook.fresco:imagepipeline-base:2.5.0@aar,com.facebook.infer.annotation:infer-annotation:0.18.0@jar,com.google.code.findbugs:jsr305:3.0.2@jar,org.jetbrains.kotlin:kotlin-annotations-jvm:1.3.72@jar,com.facebook.fresco:imagepipeline-native:2.5.0@aar,com.facebook.fresco:memory-type-ashmem:2.5.0@aar,com.facebook.fresco:memory-type-native:2.5.0@aar,com.facebook.fresco:memory-type-java:2.5.0@aar,com.facebook.fresco:nativeimagefilters:2.5.0@aar,com.facebook.fresco:nativeimagetranscoder:2.5.0@aar,com.facebook.yoga:proguard-annotations:1.19.0@jar,javax.inject:javax.inject:1@jar,commons-io:commons-io:2.6@jar,commons-codec:commons-codec:1.10@jar,F:\receptionist_app\android@@:expo-application::release,F:\receptionist_app\android@@:expo-font::release,F:\receptionist_app\android@@:expo-keep-awake::release,F:\receptionist_app\android@@:expo-localization::release,F:\receptionist_app\android@@:expo-modules-core$android-annotation,F:\receptionist_app\android@@:expo-modules-core$android-annotation-processor">
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-pager-view::release"
+        name="F:\receptionist_app\android@@:react-native-pager-view::release"
         simpleName="receptionist:react-native-pager-view"/>
     <dependency
         name="com.facebook.react:react-android:0.72.12:release@aar"
@@ -11,49 +11,49 @@
         name="com.facebook.react:hermes-android:0.72.12:release@aar"
         simpleName="com.facebook.react:hermes-android"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-async-storage_async-storage::release"
+        name="F:\receptionist_app\android@@:react-native-async-storage_async-storage::release"
         simpleName="receptionist:react-native-async-storage_async-storage"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-community_datetimepicker::release"
+        name="F:\receptionist_app\android@@:react-native-community_datetimepicker::release"
         simpleName="receptionist:react-native-community_datetimepicker"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-community_netinfo::release"
+        name="F:\receptionist_app\android@@:react-native-community_netinfo::release"
         simpleName="receptionist:react-native-community_netinfo"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo::release"
+        name="F:\receptionist_app\android@@:expo::release"
         simpleName="host.exp.exponent:expo"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-bootsplash::release"
+        name="F:\receptionist_app\android@@:react-native-bootsplash::release"
         simpleName="receptionist:react-native-bootsplash"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-gesture-handler::release"
+        name="F:\receptionist_app\android@@:react-native-gesture-handler::release"
         simpleName="receptionist:react-native-gesture-handler"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-keep-awake::release"
+        name="F:\receptionist_app\android@@:react-native-keep-awake::release"
         simpleName="receptionist:react-native-keep-awake"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-mmkv::release"
+        name="F:\receptionist_app\android@@:react-native-mmkv::release"
         simpleName="receptionist:react-native-mmkv"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-reanimated::release"
+        name="F:\receptionist_app\android@@:react-native-reanimated::release"
         simpleName="receptionist:react-native-reanimated"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-safe-area-context::release"
+        name="F:\receptionist_app\android@@:react-native-safe-area-context::release"
         simpleName="receptionist:react-native-safe-area-context"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-screens::release"
+        name="F:\receptionist_app\android@@:react-native-screens::release"
         simpleName="receptionist:react-native-screens"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-sha256::release"
+        name="F:\receptionist_app\android@@:react-native-sha256::release"
         simpleName="receptionist:react-native-sha256"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-svg::release"
+        name="F:\receptionist_app\android@@:react-native-svg::release"
         simpleName="receptionist:react-native-svg"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-tcp::release"
+        name="F:\receptionist_app\android@@:react-native-tcp::release"
         simpleName="receptionist:react-native-tcp"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-webview::release"
+        name="F:\receptionist_app\android@@:react-native-webview::release"
         simpleName="receptionist:react-native-webview"/>
     <dependency
         name="androidx.appcompat:appcompat:1.4.1@aar"
@@ -68,7 +68,7 @@
         name="androidx.vectordrawable:vectordrawable:1.1.0@aar"
         simpleName="androidx.vectordrawable:vectordrawable"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-file-system::release"
+        name="F:\receptionist_app\android@@:expo-file-system::release"
         simpleName="host.exp.exponent:expo-file-system"/>
     <dependency
         name="androidx.legacy:legacy-support-v4:1.0.0@aar"
@@ -89,7 +89,7 @@
         name="androidx.drawerlayout:drawerlayout:1.0.0@aar"
         simpleName="androidx.drawerlayout:drawerlayout"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core::release"
+        name="F:\receptionist_app\android@@:expo-modules-core::release"
         simpleName="host.exp.exponent:expo-modules-core"/>
     <dependency
         name="androidx.legacy:legacy-support-core-utils:1.0.0@aar"
@@ -146,7 +146,7 @@
         name="androidx.collection:collection:1.1.0@jar"
         simpleName="androidx.collection:collection"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-constants::release"
+        name="F:\receptionist_app\android@@:expo-constants::release"
         simpleName="host.exp.exponent:expo-constants"/>
     <dependency
         name="androidx.cursoradapter:cursoradapter:1.0.0@aar"
@@ -287,94 +287,94 @@
         name="commons-codec:commons-codec:1.10@jar"
         simpleName="commons-codec:commons-codec"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-application::release"
+        name="F:\receptionist_app\android@@:expo-application::release"
         simpleName="host.exp.exponent:expo-application"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-font::release"
+        name="F:\receptionist_app\android@@:expo-font::release"
         simpleName="host.exp.exponent:expo-font"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-keep-awake::release"
+        name="F:\receptionist_app\android@@:expo-keep-awake::release"
         simpleName="host.exp.exponent:expo-keep-awake"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-localization::release"
+        name="F:\receptionist_app\android@@:expo-localization::release"
         simpleName="host.exp.exponent:expo-localization"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core$android-annotation"
+        name="F:\receptionist_app\android@@:expo-modules-core$android-annotation"
         simpleName=":"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core$android-annotation-processor"
+        name="F:\receptionist_app\android@@:expo-modules-core$android-annotation-processor"
         simpleName=":"/>
   </compile>
   <package
-      roots="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-async-storage_async-storage::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-community_datetimepicker::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-community_netinfo::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-bootsplash::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-gesture-handler::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-keep-awake::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-mmkv::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-pager-view::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-reanimated::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-safe-area-context::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-screens::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-sha256::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-svg::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-tcp::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-webview::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-application::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-constants::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-file-system::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-font::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-keep-awake::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-localization::release,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core::release,com.facebook.react:react-android:0.72.12:release@aar,com.facebook.react:hermes-android:0.72.12:release@aar,com.google.android.material:material:1.1.0@aar,androidx.appcompat:appcompat:1.4.1@aar,androidx.appcompat:appcompat:1.4.1@aar,androidx.appcompat:appcompat-resources:1.4.1@aar,androidx.autofill:autofill:1.1.0@aar,androidx.legacy:legacy-support-v4:1.0.0@aar,androidx.legacy:legacy-support-core-ui:1.0.0@aar,androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar,androidx.tracing:tracing-ktx:1.1.0@aar,androidx.fragment:fragment-ktx:1.5.7@aar,androidx.activity:activity-ktx:1.7.1@aar,androidx.viewpager2:viewpager2:1.0.0@aar,androidx.fragment:fragment:1.5.7@aar,androidx.fragment:fragment:1.5.7@aar,androidx.activity:activity:1.7.1@aar,androidx.emoji2:emoji2-views-helper:1.0.0@aar,androidx.emoji2:emoji2:1.0.0@aar,androidx.savedstate:savedstate-ktx:1.2.1@aar,androidx.savedstate:savedstate:1.2.1@aar,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.6.1@aar,androidx.lifecycle:lifecycle-common:2.6.1@jar,androidx.lifecycle:lifecycle-livedata-core:2.6.1@aar,androidx.lifecycle:lifecycle-process:2.6.1@aar,androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1@aar,androidx.lifecycle:lifecycle-runtime-ktx:2.6.1@aar,androidx.core:core-ktx:1.6.0@aar,androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar,androidx.webkit:webkit:1.4.0@aar,androidx.vectordrawable:vectordrawable-animated:1.1.0@aar,androidx.vectordrawable:vectordrawable:1.1.0@aar,androidx.drawerlayout:drawerlayout:1.0.0@aar,androidx.recyclerview:recyclerview:1.1.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.transition:transition:1.2.0@aar,androidx.media:media:1.0.0@aar,androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar,androidx.core:core:1.8.0@aar,androidx.core:core:1.8.0@aar,androidx.lifecycle:lifecycle-runtime:2.6.1@aar,androidx.lifecycle:lifecycle-runtime:2.6.1@aar,androidx.profileinstaller:profileinstaller:1.3.0@aar,androidx.startup:startup-runtime:1.1.1@aar,androidx.tracing:tracing:1.1.0@aar,com.facebook.fbjni:fbjni:0.3.0@aar,com.facebook.fresco:fresco:2.5.0@aar,com.facebook.fresco:imagepipeline-okhttp3:2.5.0@aar,com.facebook.fresco:drawee:2.5.0@aar,com.facebook.fresco:middleware:2.5.0@aar,com.facebook.fresco:ui-common:2.5.0@aar,com.facebook.fresco:nativeimagefilters:2.5.0@aar,com.facebook.fresco:memory-type-native:2.5.0@aar,com.facebook.fresco:memory-type-java:2.5.0@aar,com.facebook.fresco:imagepipeline-native:2.5.0@aar,com.facebook.fresco:memory-type-ashmem:2.5.0@aar,com.facebook.fresco:imagepipeline:2.5.0@aar,com.facebook.fresco:nativeimagetranscoder:2.5.0@aar,com.facebook.fresco:imagepipeline-base:2.5.0@aar,com.facebook.infer.annotation:infer-annotation:0.18.0@jar,com.facebook.fresco:soloader:2.5.0@aar,com.facebook.soloader:soloader:0.10.5@aar,com.facebook.yoga:proguard-annotations:1.19.0@jar,com.google.code.findbugs:jsr305:3.0.2@jar,com.squareup.okhttp3:okhttp-urlconnection:4.9.2@jar,com.squareup.okhttp3:okhttp:4.9.2@jar,com.squareup.okio:okio:2.9.0@jar,javax.inject:javax.inject:1@jar,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core$android-annotation-processor,com.squareup:kotlinpoet-ksp:1.12.0@jar,com.squareup:kotlinpoet:1.12.0@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10@jar,androidx.core:core-splashscreen:1.0.0@aar,androidx.cursoradapter:cursoradapter:1.0.0@aar,androidx.resourceinspection:resourceinspection-annotation:1.0.0@jar,androidx.interpolator:interpolator:1.0.0@aar,androidx.collection:collection-ktx:1.1.0@jar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,androidx.cardview:cardview:1.0.0@aar,androidx.documentfile:documentfile:1.0.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar,androidx.print:print:1.0.0@aar,androidx.arch.core:core-runtime:2.2.0@aar,androidx.arch.core:core-common:2.2.0@jar,androidx.concurrent:concurrent-futures:1.1.0@jar,androidx.annotation:annotation:1.3.0@jar,C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core$android-annotation,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10@jar,org.jetbrains.kotlin:kotlin-reflect:1.8.10@jar,com.google.devtools.ksp:symbol-processing-api:1.8.10-1.0.9@jar,org.jetbrains.kotlin:kotlin-stdlib:1.8.10@jar,com.koushikdutta.async:androidasync:2.1.6@jar,com.facebook.soloader:nativeloader:0.10.5@jar,com.facebook.fresco:fbcore:2.5.0@aar,org.jetbrains.kotlin:kotlin-annotations-jvm:1.3.72@jar,com.facebook.soloader:annotation:0.10.5@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10@jar,com.android.installreferrer:installreferrer:1.0@aar,commons-io:commons-io:2.6@jar,commons-codec:commons-codec:1.10@jar,androidx.annotation:annotation-experimental:1.1.0@aar,com.parse.bolts:bolts-tasks:1.4.0@jar,org.jetbrains:annotations:13.0@jar,com.google.guava:listenablefuture:1.0@jar">
+      roots="F:\receptionist_app\android@@:react-native-async-storage_async-storage::release,F:\receptionist_app\android@@:react-native-community_datetimepicker::release,F:\receptionist_app\android@@:react-native-community_netinfo::release,F:\receptionist_app\android@@:expo::release,F:\receptionist_app\android@@:react-native-bootsplash::release,F:\receptionist_app\android@@:react-native-gesture-handler::release,F:\receptionist_app\android@@:react-native-keep-awake::release,F:\receptionist_app\android@@:react-native-mmkv::release,F:\receptionist_app\android@@:react-native-pager-view::release,F:\receptionist_app\android@@:react-native-reanimated::release,F:\receptionist_app\android@@:react-native-safe-area-context::release,F:\receptionist_app\android@@:react-native-screens::release,F:\receptionist_app\android@@:react-native-sha256::release,F:\receptionist_app\android@@:react-native-svg::release,F:\receptionist_app\android@@:react-native-tcp::release,F:\receptionist_app\android@@:react-native-webview::release,F:\receptionist_app\android@@:expo-application::release,F:\receptionist_app\android@@:expo-constants::release,F:\receptionist_app\android@@:expo-file-system::release,F:\receptionist_app\android@@:expo-font::release,F:\receptionist_app\android@@:expo-keep-awake::release,F:\receptionist_app\android@@:expo-localization::release,F:\receptionist_app\android@@:expo-modules-core::release,com.facebook.react:react-android:0.72.12:release@aar,com.facebook.react:hermes-android:0.72.12:release@aar,com.google.android.material:material:1.1.0@aar,androidx.appcompat:appcompat:1.4.1@aar,androidx.appcompat:appcompat:1.4.1@aar,androidx.appcompat:appcompat-resources:1.4.1@aar,androidx.autofill:autofill:1.1.0@aar,androidx.legacy:legacy-support-v4:1.0.0@aar,androidx.legacy:legacy-support-core-ui:1.0.0@aar,androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar,androidx.tracing:tracing-ktx:1.1.0@aar,androidx.fragment:fragment-ktx:1.5.7@aar,androidx.activity:activity-ktx:1.7.1@aar,androidx.viewpager2:viewpager2:1.0.0@aar,androidx.fragment:fragment:1.5.7@aar,androidx.fragment:fragment:1.5.7@aar,androidx.activity:activity:1.7.1@aar,androidx.emoji2:emoji2-views-helper:1.0.0@aar,androidx.emoji2:emoji2:1.0.0@aar,androidx.savedstate:savedstate-ktx:1.2.1@aar,androidx.savedstate:savedstate:1.2.1@aar,androidx.legacy:legacy-support-core-utils:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.6.1@aar,androidx.lifecycle:lifecycle-common:2.6.1@jar,androidx.lifecycle:lifecycle-livedata-core:2.6.1@aar,androidx.lifecycle:lifecycle-process:2.6.1@aar,androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel:2.6.1@aar,androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1@aar,androidx.lifecycle:lifecycle-runtime-ktx:2.6.1@aar,androidx.core:core-ktx:1.6.0@aar,androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar,androidx.webkit:webkit:1.4.0@aar,androidx.vectordrawable:vectordrawable-animated:1.1.0@aar,androidx.vectordrawable:vectordrawable:1.1.0@aar,androidx.drawerlayout:drawerlayout:1.0.0@aar,androidx.recyclerview:recyclerview:1.1.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.transition:transition:1.2.0@aar,androidx.media:media:1.0.0@aar,androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar,androidx.core:core:1.8.0@aar,androidx.core:core:1.8.0@aar,androidx.lifecycle:lifecycle-runtime:2.6.1@aar,androidx.lifecycle:lifecycle-runtime:2.6.1@aar,androidx.profileinstaller:profileinstaller:1.3.0@aar,androidx.startup:startup-runtime:1.1.1@aar,androidx.tracing:tracing:1.1.0@aar,com.facebook.fbjni:fbjni:0.3.0@aar,com.facebook.fresco:fresco:2.5.0@aar,com.facebook.fresco:imagepipeline-okhttp3:2.5.0@aar,com.facebook.fresco:drawee:2.5.0@aar,com.facebook.fresco:middleware:2.5.0@aar,com.facebook.fresco:ui-common:2.5.0@aar,com.facebook.fresco:nativeimagefilters:2.5.0@aar,com.facebook.fresco:memory-type-native:2.5.0@aar,com.facebook.fresco:memory-type-java:2.5.0@aar,com.facebook.fresco:imagepipeline-native:2.5.0@aar,com.facebook.fresco:memory-type-ashmem:2.5.0@aar,com.facebook.fresco:imagepipeline:2.5.0@aar,com.facebook.fresco:nativeimagetranscoder:2.5.0@aar,com.facebook.fresco:imagepipeline-base:2.5.0@aar,com.facebook.infer.annotation:infer-annotation:0.18.0@jar,com.facebook.fresco:soloader:2.5.0@aar,com.facebook.soloader:soloader:0.10.5@aar,com.facebook.yoga:proguard-annotations:1.19.0@jar,com.google.code.findbugs:jsr305:3.0.2@jar,com.squareup.okhttp3:okhttp-urlconnection:4.9.2@jar,com.squareup.okhttp3:okhttp:4.9.2@jar,com.squareup.okio:okio:2.9.0@jar,javax.inject:javax.inject:1@jar,F:\receptionist_app\android@@:expo-modules-core$android-annotation-processor,com.squareup:kotlinpoet-ksp:1.12.0@jar,com.squareup:kotlinpoet:1.12.0@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4@jar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10@jar,androidx.core:core-splashscreen:1.0.0@aar,androidx.cursoradapter:cursoradapter:1.0.0@aar,androidx.resourceinspection:resourceinspection-annotation:1.0.0@jar,androidx.interpolator:interpolator:1.0.0@aar,androidx.collection:collection-ktx:1.1.0@jar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,androidx.cardview:cardview:1.0.0@aar,androidx.documentfile:documentfile:1.0.0@aar,androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar,androidx.print:print:1.0.0@aar,androidx.arch.core:core-runtime:2.2.0@aar,androidx.arch.core:core-common:2.2.0@jar,androidx.concurrent:concurrent-futures:1.1.0@jar,androidx.annotation:annotation:1.3.0@jar,F:\receptionist_app\android@@:expo-modules-core$android-annotation,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10@jar,org.jetbrains.kotlin:kotlin-reflect:1.8.10@jar,com.google.devtools.ksp:symbol-processing-api:1.8.10-1.0.9@jar,org.jetbrains.kotlin:kotlin-stdlib:1.8.10@jar,com.koushikdutta.async:androidasync:2.1.6@jar,com.facebook.soloader:nativeloader:0.10.5@jar,com.facebook.fresco:fbcore:2.5.0@aar,org.jetbrains.kotlin:kotlin-annotations-jvm:1.3.72@jar,com.facebook.soloader:annotation:0.10.5@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10@jar,com.android.installreferrer:installreferrer:1.0@aar,commons-io:commons-io:2.6@jar,commons-codec:commons-codec:1.10@jar,androidx.annotation:annotation-experimental:1.1.0@aar,com.parse.bolts:bolts-tasks:1.4.0@jar,org.jetbrains:annotations:13.0@jar,com.google.guava:listenablefuture:1.0@jar">
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-async-storage_async-storage::release"
+        name="F:\receptionist_app\android@@:react-native-async-storage_async-storage::release"
         simpleName="receptionist:react-native-async-storage_async-storage"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-community_datetimepicker::release"
+        name="F:\receptionist_app\android@@:react-native-community_datetimepicker::release"
         simpleName="receptionist:react-native-community_datetimepicker"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-community_netinfo::release"
+        name="F:\receptionist_app\android@@:react-native-community_netinfo::release"
         simpleName="receptionist:react-native-community_netinfo"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo::release"
+        name="F:\receptionist_app\android@@:expo::release"
         simpleName="host.exp.exponent:expo"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-bootsplash::release"
+        name="F:\receptionist_app\android@@:react-native-bootsplash::release"
         simpleName="receptionist:react-native-bootsplash"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-gesture-handler::release"
+        name="F:\receptionist_app\android@@:react-native-gesture-handler::release"
         simpleName="receptionist:react-native-gesture-handler"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-keep-awake::release"
+        name="F:\receptionist_app\android@@:react-native-keep-awake::release"
         simpleName="receptionist:react-native-keep-awake"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-mmkv::release"
+        name="F:\receptionist_app\android@@:react-native-mmkv::release"
         simpleName="receptionist:react-native-mmkv"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-pager-view::release"
+        name="F:\receptionist_app\android@@:react-native-pager-view::release"
         simpleName="receptionist:react-native-pager-view"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-reanimated::release"
+        name="F:\receptionist_app\android@@:react-native-reanimated::release"
         simpleName="receptionist:react-native-reanimated"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-safe-area-context::release"
+        name="F:\receptionist_app\android@@:react-native-safe-area-context::release"
         simpleName="receptionist:react-native-safe-area-context"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-screens::release"
+        name="F:\receptionist_app\android@@:react-native-screens::release"
         simpleName="receptionist:react-native-screens"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-sha256::release"
+        name="F:\receptionist_app\android@@:react-native-sha256::release"
         simpleName="receptionist:react-native-sha256"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-svg::release"
+        name="F:\receptionist_app\android@@:react-native-svg::release"
         simpleName="receptionist:react-native-svg"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-tcp::release"
+        name="F:\receptionist_app\android@@:react-native-tcp::release"
         simpleName="receptionist:react-native-tcp"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:react-native-webview::release"
+        name="F:\receptionist_app\android@@:react-native-webview::release"
         simpleName="receptionist:react-native-webview"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-application::release"
+        name="F:\receptionist_app\android@@:expo-application::release"
         simpleName="host.exp.exponent:expo-application"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-constants::release"
+        name="F:\receptionist_app\android@@:expo-constants::release"
         simpleName="host.exp.exponent:expo-constants"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-file-system::release"
+        name="F:\receptionist_app\android@@:expo-file-system::release"
         simpleName="host.exp.exponent:expo-file-system"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-font::release"
+        name="F:\receptionist_app\android@@:expo-font::release"
         simpleName="host.exp.exponent:expo-font"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-keep-awake::release"
+        name="F:\receptionist_app\android@@:expo-keep-awake::release"
         simpleName="host.exp.exponent:expo-keep-awake"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-localization::release"
+        name="F:\receptionist_app\android@@:expo-localization::release"
         simpleName="host.exp.exponent:expo-localization"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core::release"
+        name="F:\receptionist_app\android@@:expo-modules-core::release"
         simpleName="host.exp.exponent:expo-modules-core"/>
     <dependency
         name="com.facebook.react:react-android:0.72.12:release@aar"
@@ -590,7 +590,7 @@
         name="javax.inject:javax.inject:1@jar"
         simpleName="javax.inject:javax.inject"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core$android-annotation-processor"
+        name="F:\receptionist_app\android@@:expo-modules-core$android-annotation-processor"
         simpleName=":"/>
     <dependency
         name="com.squareup:kotlinpoet-ksp:1.12.0@jar"
@@ -653,7 +653,7 @@
         name="androidx.annotation:annotation:1.3.0@jar"
         simpleName="androidx.annotation:annotation"/>
     <dependency
-        name="C:\Users\hp\Desktop\OFFLINE APPS\receptionist_app\android@@:expo-modules-core$android-annotation"
+        name="F:\receptionist_app\android@@:expo-modules-core$android-annotation"
         simpleName=":"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10@jar"

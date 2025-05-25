@@ -285,7 +285,14 @@ export const PatientStoreModel = types
     },
     addNewPatient(patient: Patient) {
       console.log('patient in add new patient....', patient);
-      store.patients.push(patient);
+      const userAddedPatient = {
+        ...patient,
+        isUserAdded: true, // 🔒 Mark this patient as user-added
+      };
+      // store.patients.push(patient);
+      console.log('Adding user-added patient:', userAddedPatient); // ✅ Confirm this
+      store.patients.push(userAddedPatient);
+      console.log('patient in add new patient....', store.patients);
     },
     addAddressToNewPatient(
       address: string,

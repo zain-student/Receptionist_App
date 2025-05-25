@@ -107,16 +107,29 @@ export const ProfileEmergencyContact: FC<
       name + '',
       contact + '',
       index,
+      true,
     );
+    const patientData = {
+      ...getNewPatient(index),
+      isUserAdded: true, // make sure this flag is added
+    };
     let prev = mmkvStorage.getString('newPatients');
     if (prev) {
-      mmkvStorage.set(
-        'newPatients',
-        JSON.stringify([...JSON.parse(prev), getNewPatient(index)]),
-      );
+      const parsed = JSON.parse(prev);
+      parsed[index] = patientData;
+      mmkvStorage.set('newPatients', JSON.stringify(parsed));
     } else {
-      mmkvStorage.set('newPatients', JSON.stringify([getNewPatient(index)]));
+      mmkvStorage.set('newPatients', JSON.stringify([patientData]));
     }
+    // let prev = mmkvStorage.getString('newPatients');
+    // if (prev) {
+    //   mmkvStorage.set(
+    //     'newPatients',
+    //     JSON.stringify([...JSON.parse(prev), getNewPatient(index)]),
+    //   );
+    // } else {
+    //   mmkvStorage.set('newPatients', JSON.stringify([getNewPatient(index)]));
+    // }
     patientStore.selectNewPatient(patientIndex);
     // navigation.navigate('ProfileConsentScreen')
     navigation.dispatch(

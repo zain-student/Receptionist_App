@@ -355,7 +355,7 @@ export const EditProfileBasicInfoScreen: FC<
         console.log('❌ Invalid DOB:', patientData.DOB);
         setDob(null); // fallback for safety
       }
-      
+
       setMrn(patientData.MRNNo || '');
       setGender(patientData.Gender || '');
       setMeritalStatus([patientData.MartialStatus] || []);
@@ -411,8 +411,8 @@ export const EditProfileBasicInfoScreen: FC<
   function save() {
     const lastIndex = latestIndex();
     // const mrno = '01-01-' + getRandomNumber() + lastIndex + 1;
-    const mrno = patientData?.MRNNo || '01-01-' + getRandomNumber() + lastIndex + 1;
-
+    const mrno =
+      patientData?.MRNNo || '01-01-' + getRandomNumber() + lastIndex + 1;
 
     if (
       !(
@@ -460,6 +460,7 @@ export const EditProfileBasicInfoScreen: FC<
       Services: [],
       Status: '',
       CheckInSynced: false,
+      isUserAdded: true,
     };
 
     const patient2 = {
@@ -502,7 +503,7 @@ export const EditProfileBasicInfoScreen: FC<
       Services: [],
       Status: '',
       CheckInSynced: false,
-
+      isUserAdded: true,
       Ethnicity: ethnicity + '',
       RelationToPatient: relationship + '',
       NameOfRelative: nameOfRelative + '',
