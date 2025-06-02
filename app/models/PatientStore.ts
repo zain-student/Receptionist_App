@@ -342,7 +342,40 @@ export const PatientStoreModel = types
         store.addFavorite(patient);
       }
     },
-  }));
+  }))
+  .actions(store => ({
+  setupMidnightReset() {
+    const now = new Date();
+    const midnight = new Date(
+      now.getFullYear(),
+      now.getMonth(),
+      now.getDate() + 1,
+      0,
+      0,
+      0,
+    );
+    const msUntilMidnight = midnight.getTime() - now.getTime();
+//  const msUntilMidnight = 60000; // 1 min for test
+ const resetTime = new Date(Date.now() + msUntilMidnight);
+console.log('⏰ Scheduled patient reset at', resetTime.toLocaleTimeString());
+
+    // console.log('⏰ Scheduled patient reset in', msUntilMidnight, 'ms');
+// ToastAndroid.show('⏰ Scheduled patient reset in', msUntilMidnight, 'ms',ToastAndroid.LONG);
+    setTimeout(() => {
+      store.resetPatientsAtMidnight();
+      // Reschedule the next reset
+      store.setupMidnightReset();
+    }, msUntilMidnight);
+  },
+
+  resetPatientsAtMidnight() {
+    console.log('⏱️ Midnight reached — resetting patient queue.');
+    ToastAndroid.show('⏱️ Midnight reached — resetting patient queue.',ToastAndroid.LONG);
+    store.patientQueue.clear();
+    store.selectedPatient.clear();
+  }
+}))
+;
 
 export interface PatientStore extends Instance<typeof PatientStoreModel> {}
 export interface PatientStoreSnapshot

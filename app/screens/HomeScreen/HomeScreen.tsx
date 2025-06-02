@@ -47,6 +47,7 @@ import {UserContext} from 'app/utils/UserContext';
 import QrCodePopup from 'app/components/QRCodePopup';
 import {fetch} from '@react-native-community/netinfo';
 import Loading from 'app/components/Loading';
+import { observer } from 'mobx-react-lite';
 const logo = require('../../../assets/images/logo.png');
 
 const MENU = [
@@ -223,7 +224,7 @@ const ShowroomListItem = Platform.select({
 let qrdata = '';
 let backhandler: NativeEventSubscription;
 
-export const HomeScreen: FC<HomeTabScreenProps<'Home'>> = function HomeScreen(
+export const HomeScreen: FC<HomeTabScreenProps<'Home'>> =observer( function HomeScreen(
   _props,
 ) {
   const [open, setOpen] = useState(false);
@@ -238,7 +239,7 @@ export const HomeScreen: FC<HomeTabScreenProps<'Home'>> = function HomeScreen(
   const [isLoading, setIsLoading] = React.useState(true);
   const {siteStore} = useStores();
   const [showQrCodeScanner, setshowQrCodeScanner] = React.useState(false);
-  const [totalPatients, setTotalPatients] = useState<number>(0); // State to hold the ttal number of patients in OPD
+  const [totalPatients, setTotalPatients] = useState<number>(0); // State to hold the total number of patients in OPD
 
   const {
     authenticationStore: {logout, appIsOnline},
@@ -722,7 +723,7 @@ export const HomeScreen: FC<HomeTabScreenProps<'Home'>> = function HomeScreen(
       </Screen>
     </DrawerLayout>
   );
-};
+});
 
 // function ProfileIconButton(onPress) {
 //   return (
