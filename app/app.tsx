@@ -75,7 +75,11 @@ function App(props: AppProps) {
   const {rehydrated,rootStore} = useInitialRootStore(() => {
     // This runs after the root store has been initialized and rehydrated.
  // ✅ Start the patient midnight reset clock
-  rootStore.patientStore.setupMidnightReset();
+  // rootStore.patientStore.setupMidnightReset();
+   // ⏳ Wait briefly before running reset logic
+  setTimeout(() => {
+    rootStore.patientStore.setupMidnightReset();
+  }, 500); // 🔁 0.5s delay after hydration
   // rootStore.patientStore.startMidnightResetClock();
   // rootStore.patientStore.checkAndResetPatientsAtMidnight(); // Optional: run an immediate check on launch
     // If your initialization scripts run very fast, it's good to show the splash screen for just a bit longer to prevent flicker.

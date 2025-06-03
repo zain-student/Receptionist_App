@@ -350,6 +350,8 @@ export const LandingScreen: FC<LandingScreenProps> = observer(
         />
       </View> */}
           <View style={$loginButtonView}>
+            <Text style={{color:'white',fontSize:12,alignSelf:'center'}}>Version: 2.0.0</Text>
+<Text style={{color:'white',fontSize:12,alignSelf:'center'}}>Published: 28 May,2025</Text>
             <Button
               testID="login-button"
               tx="landingScreen.signIn"
