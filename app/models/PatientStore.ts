@@ -349,40 +349,12 @@ export const PatientStoreModel = types
     midnightResetTimer: null as ReturnType<typeof setTimeout> | null,
   }))
   .actions(store => ({
-//   setupMidnightReset() {
-//     const now = new Date();
-//     const midnight = new Date(
-//       now.getFullYear(),
-//       now.getMonth(),
-//       now.getDate() + 1,
-//       0,
-//       0,
-//       0,
-//     );
-//     const msUntilMidnight = midnight.getTime() - now.getTime();
-// //  const msUntilMidnight = 60000; // 1 min for test
-//  const resetTime = new Date(Date.now() + msUntilMidnight);
-// console.log('⏰ Scheduled patient reset at', resetTime.toLocaleTimeString());
-
-//     // console.log('⏰ Scheduled patient reset in', msUntilMidnight, 'ms');
-// // ToastAndroid.show('⏰ Scheduled patient reset in', msUntilMidnight, 'ms',ToastAndroid.LONG);
-//     setTimeout(() => {
-//       store.resetPatientsAtMidnight();
-//       // Reschedule the next reset
-//       store.setupMidnightReset();
-//     }, msUntilMidnight);
-//   },
 setupMidnightReset() {
   const now = new Date();
   const today = now.toDateString();
   console.log("1");
   
-//   try {
-//   mmkvStorage.delete('lastPatientReset');
-//   console.log("2");
-// } catch (error) {
-//   console.error("❌ MMKV delete failed:", error);
-// }
+
 
 
   const lastReset = mmkvStorage.getString('lastPatientReset');
@@ -426,43 +398,6 @@ const msUntilMidnight = midnight.getTime() - now.getTime();
   }
 }));
 
-
-// .actions(store => ({
-  // setupMidnightReset() {
-  //   const now = new Date();
-  //   const todayDateString = now.toDateString();
-
-  //   // Get last reset date from storage
-  //   const lastReset = mmkvStorage.getString('lastPatientReset');
-
-  //   // Reset immediately if needed
-  //   if (lastReset !== todayDateString) {
-  //     console.log('🔁 Resetting patients due to date mismatch...');
-  //     store.resetPatientsAtMidnight();
-  //     mmkvStorage.set('lastPatientReset', todayDateString);
-  //   }
-
-  //   // Calculate ms until next midnight
-  //   const midnight = new Date(
-  //     now.getFullYear(),
-  //     now.getMonth(),
-  //     now.getDate() + 1,
-  //     0, 0, 0
-  //   );
-  //   // const msUntilMidnight = midnight.getTime() - now.getTime();
-  //   const msUntilMidnight=30000;
-
-  //   const resetTime = new Date(Date.now() + msUntilMidnight);
-  //   console.log('⏰ Scheduled patient reset at', resetTime.toLocaleTimeString());
-
-  //   setTimeout(() => {
-  //     store.resetPatientsAtMidnight();
-  //     mmkvStorage.set('lastPatientReset', new Date().toDateString());
-  //     store.setupMidnightReset(); // Reschedule for next day
-  //   }, msUntilMidnight);
-  // },
-  // }))
-// ;
 
 export interface PatientStore extends Instance<typeof PatientStoreModel> {}
 export interface PatientStoreSnapshot

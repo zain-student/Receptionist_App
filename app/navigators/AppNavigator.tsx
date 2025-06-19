@@ -273,6 +273,21 @@ const AppStack = observer(function AppStack() {
                     global.docSuccessResponses.splice(sIndexToFind, 1);
                   }
                 }
+                // .........................
+                // ⛔ Before sending to doctor, make sure the patient exists in MST
+const existing = patientStore.patients.find(
+  p => p.PatientId === response.payload?.PatientId
+);
+console.log("Heelo")
+
+if (!existing) {
+  // Add patient to MST if missing
+  patientStore.addPatient(response.payload);
+} else {
+  // Optional: ensure MRN isn't accidentally changed
+  response.payload.MRN = existing.MRN;
+}
+// ................................
                 global.doctorSocket.write(
                   JSON.stringify({
                     receiver: 'doctor',

@@ -234,6 +234,7 @@ export const PatientStatusScreen: FC<HomeTabScreenProps<'PatientStatus'>> =
           tempPatient = {
             ...patientDetails,
             ...tempPatient,
+            isUserAdded: patientData.isUserAdded, // ✅ add this to make patient as user added after sending data to the next app 
             EnteredBy: {
               UserId: authenticationStore.login
                 ? authenticationStore.login[0]?.UserId
@@ -879,7 +880,7 @@ export const PatientStatusScreen: FC<HomeTabScreenProps<'PatientStatus'>> =
           <View style={$patientsListView}>
             <FlatList
               key={refresh}
-              data={patientQueue}
+              data={patientQueue.filter(item=>item.isUserAdded)}
               // style={$patientsListView}
               // extraData={refresh}
               renderItem={({item}) => <PatientItem title={item} />}

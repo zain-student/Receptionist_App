@@ -396,9 +396,9 @@ export const PatientSearchScreen: FC<HomeTabScreenProps<'PatientSearch'>> =
             <View style={$patientsListView}>
               <FlatList
                 key={flatlistKey}
-                data={query ? data : patientStore.patientsForList}
+                data={query ? data : patientStore.patientsForList.filter(item=>item.isUserAdded)}
                 // style={$patientsListView}
-                extraData={query ? data : patientStore.patientsForList}
+                extraData={query ? data : patientStore.patientsForList.filter(item=>item.isUserAdded)}
                 renderItem={({item}) => <PatientItem item={item} />}
                 keyExtractor={(item, index) => index.toString()}
               />

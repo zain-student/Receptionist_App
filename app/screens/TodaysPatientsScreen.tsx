@@ -189,14 +189,14 @@ export const TodaysPatientsScreen: FC<HomeTabScreenProps<'TodaysPatients'>> =
             {title.Gender + ' | ' + calculateFullAge(title.DOB)}
           </Text>
         </View>
-        <View style={$patientItemDetailView}>
+        {/* <View style={$patientItemDetailView}>
           <Text testID="login-heading" preset="bold" style={$patientsText}>
             {'Address: '}
           </Text>
           <Text testID="login-heading" preset="default" style={$patientsText}>
             {title.Address}
           </Text>
-        </View>
+        </View> */}
         <View style={$patientItemDetailView}>
           <Text testID="login-heading" preset="bold" style={$patientsText}>
             {'DOB: '}
@@ -330,7 +330,7 @@ export const TodaysPatientsScreen: FC<HomeTabScreenProps<'TodaysPatients'>> =
           <View style={$patientsListView}>
             <FlatList
               key={refresh}
-              data={patientQueueForList()}
+              data={patientQueueForList().filter(item=>item.isUserAdded)}
               extraData={patientQueueForList()}
               keyExtractor={(item, index) => index.toString()}
               renderItem={({item, index}) => (
