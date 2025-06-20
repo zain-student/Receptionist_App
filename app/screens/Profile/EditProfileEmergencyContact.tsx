@@ -31,6 +31,8 @@ import {CommonActions} from '@react-navigation/native';
 import {mmkvStorage} from 'app/models/AuthenticationStore';
 import {useRoute} from '@react-navigation/native';
 import {ServiceStore} from '../../models/ServiceStore';
+import { format } from 'date-fns';
+// import { AuthenticationStore } from '../../models/AuthenticationStore';
 const RELATIONSHIP = [
   {
     id: 1,
@@ -59,7 +61,7 @@ export const EditEmergencyContact: FC<
 > = function EditEmergencyContact(_props) {
   const {navigation} = _props;
   const route = useRoute();
-  const {serviceStore} = useStores();
+  const {serviceStore,authenticationStore} = useStores();
   console.log('UseStores:', useStores());
   // const route = useRoute();
   // const {patientIndex, patientData} = route.params;
@@ -214,7 +216,8 @@ export const EditEmergencyContact: FC<
       Country: String(updatedPatient.Country ?? ''),
       City: String(updatedPatient.City ?? ''),
       Province: String(updatedPatient.Province ?? ''),
-      DOB: new Date(updatedPatient.DOB).toISOString(),
+      // DOB: new Date(updatedPatient.DOB).toISOString(),
+      DOB: format(new Date(updatedPatient.DOB), 'dd/MM/yyyy hh:mm:ss a'),
     };
     console.log('Sanitized Patient:', sanitizedPatient);
     patientStore.modifyPatient(sanitizedPatient, patientIndex); //...... Error in this line
@@ -237,6 +240,98 @@ export const EditEmergencyContact: FC<
       mmkvStorage.set('newPatients', JSON.stringify(parsed));
     }
     ToastAndroid.show('Data Updated Successfully', ToastAndroid.SHORT);
+    //....................................................
+    // This is used to update patient data to the next app
+    // This goes after the MMKV update and before navigation
+
+    // if (global.isServerConnected) {
+    //   const updatedToSend = {
+    //     ...sanitizedPatient,
+    //     isUserAdded: true,
+    //     EnteredBy: {
+    //       UserId: authenticationStore.login?.[0]?.UserId ?? '',
+    //       FullName: authenticationStore.login?.[0]?.FullName ?? '',
+    //     },
+    //   };
+
+    //   global.socket.write(
+    //     JSON.stringify({
+    //       receiver: 'nurse', // Send to nurse first (app chain logic continues)
+    //       sender: 'receptionist',
+    //       payload: updatedToSend,
+    //     }),
+    //   );
+
+    //   ToastAndroid.show('Updated patient sent to next app.', ToastAndroid.SHORT);
+    // } else {
+    //   ToastAndroid.show('Unable to sync update. Check connection.', ToastAndroid.LONG);
+    // }
+
+    const updatedToSend = {
+      ...sanitizedPatient,
+      isUserAdded: true,
+      EnteredBy: {
+        UserId: authenticationStore.login?.[0]?.UserId ?? '',
+        FullName: authenticationStore.login?.[0]?.FullName ?? '',
+      },
+    };
+
+    // Send to Nurse
+    if (global.socket) {
+      global.socket.write(
+        JSON.stringify({
+          receiver: 'nurse',
+          sender: 'receptionist',
+          payload: updatedToSend,
+        }),
+      );
+      ToastAndroid.show('Update sent to Nurse App', ToastAndroid.SHORT);
+    } else {
+      ToastAndroid.show('Nurse App not connected', ToastAndroid.SHORT);
+    }
+
+    // Send to Doctor
+    if (global.doctorSocket) {
+      global.doctorSocket.write(
+        JSON.stringify({
+          receiver: 'doctor',
+          sender: 'receptionist',
+          payload: updatedToSend,
+        }),
+      );
+      ToastAndroid.show('Update sent to doctor App', ToastAndroid.SHORT);
+    } else {
+      ToastAndroid.show('Doctor App not connected', ToastAndroid.SHORT);
+    }
+
+    // Send to Pharmacy
+    if (global.pharmacySocket) {
+      const patientMeds = mmkvStorage.getString('medsAgainstPatients');
+      const medsParsed = patientMeds ? JSON.parse(patientMeds) : [];
+      const matched = medsParsed.find(
+        m => m.PatientId === updatedToSend.PatientId,
+      );
+
+      const fullPayload = {
+        ...updatedToSend,
+        status: 'Prescription',
+        Medications: matched?.Medications ?? [],
+      };
+
+      global.pharmacySocket.write(
+        JSON.stringify({
+          receiver: 'pharmacy',
+          sender: 'receptionist',
+          payload: fullPayload,
+        }),
+      );
+      ToastAndroid.show('Update sent to pharmacy App', ToastAndroid.SHORT);
+    } else {
+      ToastAndroid.show('pharmacy App not connected', ToastAndroid.SHORT);
+    }
+
+    //.......................................................
+
     // Go back to Todays Patients screen
     navigation.navigate('TodaysPatients');
   }
