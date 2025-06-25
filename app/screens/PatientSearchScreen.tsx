@@ -289,11 +289,20 @@ export const PatientSearchScreen: FC<HomeTabScreenProps<'PatientSearch'>> =
       // navigation.navigate("PatientAdvanceSearch")
     }
 
-    function onItemPress(item: any) {
-      console.log('-=-=-=-=-=-=-=', item);
-      patientStore.selectAPatient(item);
-      navigation.navigate('Patient');
-    }
+    // function onItemPress(item: any) {
+    //   console.log('-=-=-=-=-=-=-=', item);
+    //   patientStore.selectAPatient(item);
+    //   navigation.navigate('Patient');
+    // }
+function onItemPress(item: any) {
+  try {
+    patientStore.selectAPatient(item);
+    navigation.navigate('Patient');
+  } catch (e) {
+    console.error('Failed to select patient:', e);
+    ToastAndroid.show('Error loading patient. Please try again.', ToastAndroid.LONG);
+  }
+}
 
     const handleSearch = text => {
       const formattedQuery = text.toLowerCase();
@@ -396,9 +405,11 @@ export const PatientSearchScreen: FC<HomeTabScreenProps<'PatientSearch'>> =
             <View style={$patientsListView}>
               <FlatList
                 key={flatlistKey}
-                data={query ? data : patientStore.patientsForList.filter(item=>item.isUserAdded)}
+                // data={query ? data : patientStore.patientsForList.filter(item=>item.isUserAdded)}
+                data={query?data:patientStore.patientsForList}
                 // style={$patientsListView}
-                extraData={query ? data : patientStore.patientsForList.filter(item=>item.isUserAdded)}
+                // extraData={query ? data : patientStore.patientsForList.filter(item=>item.isUserAdded)}
+                extraData={query ? data : patientStore.patientsForList}
                 renderItem={({item}) => <PatientItem item={item} />}
                 keyExtractor={(item, index) => index.toString()}
               />

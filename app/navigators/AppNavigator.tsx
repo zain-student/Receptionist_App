@@ -16,7 +16,7 @@ import {
 } from '@react-navigation/native-stack';
 import {observer} from 'mobx-react-lite';
 import React, {useEffect, useState} from 'react';
-import {useColorScheme} from 'react-native';
+import {ToastAndroid, useColorScheme} from 'react-native';
 import * as Screens from 'app/screens';
 import Config from '../config';
 import {useStores} from '../models'; // @demo remove-current-line
@@ -288,14 +288,18 @@ if (!existing) {
   response.payload.MRN = existing.MRN;
 }
 // ................................
-                global.doctorSocket.write(
+           try{               
+              global.doctorSocket.write(
                   JSON.stringify({
                     receiver: 'doctor',
                     sender: 'nurse',
                     payload: response.payload,
                   }),
                 );
+              } catch (err) {
+                ToastAndroid.show("Failed to forward data to doctor:",ToastAndroid.SHORT);
               }
+            }
               if (response.sender === 'doctor' && global.isServerConnected) {
                 let peyload = JSON.parse(JSON.stringify(response.payload));
                 delete peyload.Medications;
@@ -402,19 +406,50 @@ if (!existing) {
               } else {
                 response = response.payload;
               }
-              if (response.Services) {
-                let _services = [];
-                response.Services.forEach(item => {
-                  for (let i = 0; i < serviceStore.services.length; i++) {
-                    if (item.ServiceId === serviceStore.services[i].ServiceId) {
-                      _services.push(serviceStore.services[i]);
-                    }
-                  }
-                });
-                response.Services = _services;
-              } else {
-                response.Services = [];
-              }
+              // if (response.Services) {
+              //   let _services = [];
+              //   response.Services.forEach(item => {
+              //     for (let i = 0; i < serviceStore.services.length; i++) {
+              //       if (item.ServiceId === serviceStore.services[i].ServiceId) {
+              //         _services.push(serviceStore.services[i]);
+              //       }
+              //     }
+              //   });
+              //   response.Services = _services;
+              // } else {
+              //   response.Services = [];
+              // }
+              try {
+  if (response.Services) {
+    let _services = [];
+    response.Services.forEach(item => {
+      for (let i = 0; i < serviceStore.services.length; i++) {
+        if (item.ServiceId === serviceStore.services[i].ServiceId) {
+          _services.push(serviceStore.services[i]);
+        }
+      }
+    });
+    response.Services = _services;
+  } else {
+    response.Services = [];
+  }
+} catch (e) {
+  console.warn('⚠️ Error processing Services:', e);
+  ToastAndroid.show("Something went wrong! please try again ",ToastAndroid.SHORT);
+  response.Services = [];
+}
+
+              // ✅ Ensure API-based patient is present in `patients[]` before using in queue
+const alreadyExists = patientStore.patients.find(
+  p => p.PatientId === response.PatientId
+);
+
+// 🛑 Add to store ONLY IF it does not exist (avoids affecting user-added flow)
+if (!alreadyExists) {
+  console.log("🛠️ API patient missing in patients[], adding now...");
+  patientStore.addNewPatient(response);
+}
+
               let patients = patientStore.patientQueueForList();
               let indexToFind = patients.findIndex(
                 item => item.PatientId === response.PatientId,
@@ -529,7 +564,7 @@ if (!existing) {
         console.log('server close');
         updateSocket(null);
         global.isServerConnected = false;
-      });
+      }); 
 
       return global.server;
     } catch (e) {}

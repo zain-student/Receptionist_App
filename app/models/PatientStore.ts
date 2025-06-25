@@ -330,7 +330,19 @@ export const PatientStoreModel = types
     },
     selectAPatient(patient: Patient) {
       console.log('patientSelected in store....', store.selectedPatient[0]);
-      if (!store.patientSelected(patient)) store.selectPatient(patient);
+       const existing = store.patients.find(p => p.PatientId === patient.PatientId);
+    if (!existing) {
+      console.log('Adding missing API patient to store before selecting...');
+      store.patients.push(patient); // Only add if truly missing
+       ToastAndroid.show('Patient synced into list before selection ✅', ToastAndroid.SHORT);
+    }
+    if (!store.patientSelected(patient)) 
+      {store.selectPatient(patient);
+        ToastAndroid.show('Patient selected successfully ✅', ToastAndroid.SHORT);
+      }
+    else {
+            ToastAndroid.show('Patient already selected', ToastAndroid.SHORT);
+      }
     },
     latestIndex() {
       return store.patients.length;
